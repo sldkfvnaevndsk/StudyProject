@@ -12,9 +12,9 @@ public class Main {
                 information[i][j] = scan.nextInt();
             }
         }
-        int maxTax = -1; /*information[0][0] * information[1][0];*/
-        int company = -1;
-        for (int j = 0; j < information[0].length; j++) {
+        int maxTax = information[0][0] * information[1][0];
+        int company = 0;
+        for (int j = 1; j < information[0].length; j++) {
             if (information[0][j] * information[1][j] > maxTax) {
                 maxTax = information[0][j] * information[1][j];
                 company = j;
